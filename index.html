@@ -10,67 +10,79 @@
   </head>
   <body>
     <header>
-      <div class="logo"><img src="assets/images/original_trombones.png"></div>
+      <div class="logo">
+        <img src="assets/images/original_trombones.png">
+      </div>
 
       <nav>
         <ul>
-          <li>Features</li>
-          <li>How It Works</li>
-          <li>Pricing</li>
+          <a href="#features"><li>Features</li></a>
+          <a href="#function"><li>How It Works</li></a>
+          <a href="#pricing"><li>Pricing</li></a>
         </ul>
       </nav>
     </header>
 
+    <div class="content">
+
+    <h2>Handcrafted, home-made masterpieces</h2>
     <form>
-      Handcrafted, home-made masterpieces
-      [Input - Enter your email address]
-      Get Started
+      <input type="email" name="email" id="email" placeholder="Enter your email addreess">
+
+      <input type="submit" value="Get Started">
     </form>
 
-    <section>
+    <section id="features">
       <img src="assets/images/flame.svg">
-      Premium Materials
-      Our trombones use the shiniest brass which is sourced locally. This will
-      increase the longevity of your purchase.
+      <h2>Premium Materials</h2>
+      <p>Our trombones use the shiniest brass which is sourced locally. This will
+      increase the longevity of your purchase.</p>
 
       <img src="assets/images/truck.svg">
-      Fast Shipping
-      We make sure you recieve your trombone as soon as we have finished making
-      it. We also provide free returns if you are not satisfied.
+      <h2>Fast Shipping</h2>
+      <p>We make sure you recieve your trombone as soon as we have finished making
+      it. We also provide free returns if you are not satisfied.</p>
 
       <img src="assets/images/battery.svg">
-      Quality Assurance
-      For every purchase you make, we will ensure there are no damages or faults
-      and we will check and test the pitch of your instrument.
+      <h2>Quality Assurance</h2>
+      <p>For every purchase you make, we will ensure there are no damages or faults
+      and we will check and test the pitch of your instrument.</p>
     </section>
 
-    <iframe width="500px" height="500px" src="https://www.youtube.com/watch?v=y8Yv4pnO7qc">
+    <iframe width="500px" height="350px"src="https://www.youtube.com/watch?v=y8Yv4pnO7qc" id="function">
     </iframe>
 
-    <section>
-      Tenor Trombone
-      $600
-      Lorem ipsum.
-      Lorem ipsum.
-      Lorem ipsum dolor.
-      Lorem ipsum.
-      Select
+    <section id="pricing">
+      <div>
+        <h3>Tenor Trombone</h3>
+        $600
+        Lorem ipsum.
+        Lorem ipsum.
+        Lorem ipsum dolor.
+        Lorem ipsum.
+        <div class="select-button">Select</div>
+      </div>
 
-      Bass Trombone
-      $900
-      Lorem ipsum.
-      Lorem ipsum.
-      Lorem ipsum dolor.
-      Lorem ipsum.
-      Select
+      <div>
+        <h3>Bass Trombone</h3>
+        $900
+        Lorem ipsum.
+        Lorem ipsum.
+        Lorem ipsum dolor.
+        Lorem ipsum.
+        <div class="select-button">Select</div>
+      </div>
 
-      Valve Trombone
-      $1200
-      Plays similar to a Trumpet
-      Great for Jazz Bands
-      Lorem ipsum dolor.
-      Lorem ipsum.
-      Select
+      <div>
+        <h3>Valve Trombone</h3>
+        $1200
+        Plays similar to a Trumpet
+        Great for Jazz Bands
+        Lorem ipsum dolor.
+        Lorem ipsum.
+        <div class="select-button">Select</div>
+      </div>
+
     </section>
 
     <footer>
@@ -84,6 +96,6 @@
       Copyright 2016, Original Trombones
     </footer>
 
-
+    </div>
   </body>
 </html>
