@@ -256,10 +256,7 @@ input[type="email"] {
   input[type="submit"] {
     max-width: 350px;
   }
-
 }
-
-
 
 @media (min-width: 900px) {
   .pricing-section {
@@ -279,7 +276,7 @@ input[type="email"] {
 
   .features-section {
     margin: 0px auto;
-    width: 950px;
+    width: 900px;
   }
 }
 
@@ -288,7 +285,3 @@ input[type="email"] {
     width: 950px;
   }
 }
-
-
-/* Add Breakpoints Here */
-/* Apply to certain size and above */
