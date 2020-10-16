@@ -39,7 +39,7 @@ header {
   position: fixed;
   display: flex;
   background-color: #eee;
-  height: 15vh;
+  height: 145px;
   width: 100vw;
   padding: 2vh;
   opacity: 100%;
@@ -83,11 +83,8 @@ footer table tr:first-child {
 
 .form {
   text-align: center;
-}
-
-form {
+  height: 200px;
   padding: 10px;
-  height: 15vh;
 }
 
 input {
@@ -124,6 +121,9 @@ input[type="email"] {
   font-size: 1.5rem;
 }
 
+.features-flex-container {
+  display: flex;
+}
 
 /* Features section above */
 
@@ -204,8 +204,8 @@ input[type="email"] {
 
 @media (min-width: 551px) {
   header {
+    height: 150px;
     justify-content: space-around;
-    height: 10vh;
   }
 
   header nav ul  {
@@ -223,9 +223,35 @@ input[type="email"] {
 
   .features-section img {
     display: inline-block;
-    width: 8vw;
+    width: 70px;
     margin: 0 5vw;
-    float: left;
+  }
+  table {
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .pricing-section {
+    flex-direction: row;
+    justify-content: center;
+    height: 450px;
+  }
+
+  .pricing-section > div {
+    margin: 10px;
+  }
+
+  footer {
+    width: 900px;
+    margin: 0px auto;
+  }
+}
+
+@media (min-width: 950px) {
+  footer {
+    width: 950px;
   }
 }
 
