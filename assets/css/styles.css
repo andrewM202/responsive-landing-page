@@ -1,5 +1,4 @@
-/* General Styles */
-/* Apply to all sizes */
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0px;
@@ -10,10 +9,21 @@ body {
   background-color: #eee;
 }
 
-.content {
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.content-wrapper { /* Made so content is not overlapepd by fixed header */
   position: relative;
   top: 15vh;
 }
+
+/* Header below */
 
 header {
   position: fixed;
@@ -26,15 +36,39 @@ header {
   z-index: 1;
 }
 
-footer {
-  height: 5vh;
-  width: 100vw;
-  background-color: #eee;
-}
-
 header ul li {
   padding: 0.2vh;;
 }
+
+.logo {
+  display: inline-block;
+  width: 60vw;
+  background-color: #;
+}
+
+/* Header above */
+
+/* Footer below */
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  background-color: #ddd;
+}
+
+footer table {
+
+}
+
+footer table tr:first-child {
+  font-size: 1.15rem;
+}
+
+/* Footer above */
+
+/* Form below */
 
 form {
   padding: 10px;
@@ -62,41 +96,82 @@ input[type="email"] {
   padding: 3px;
 }
 
-.logo {
-  display: inline-block;
-  width: 60vw;
-  background-color: #;
-}
+/* Form above */
 
 img {
   width: 100%;
   height: 100%;
 }
 
-ul {
-  list-style: none;
-}
+/* Features section below */
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-section p {
+.features-section p {
   margin-bottom: 7vh;
   font-size: 1.2rem;
 }
 
-
-section div {
-  width: 60vw;
-  height: 40vh;
+.features-section h2 {
+  font-size: 1.5rem;
 }
+
+
+/* Features section above */
+
+/* Pricing section below */
+
+.pricing-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-section > div {
+  width: 60vw;
+  height: 300px;
+  margin: 0.5vh 0 0.5vh 0;
+  border: 1px solid black;
+}
+
+.pricing-section div div { /* For Select button */
+  margin: 0px auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  width: 100px;
+  height: 40px;
+  background-color: #f1c40f;
+}
+
+.pricing-section > div h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  height: 15%;
+  background-color: #ddd;
+}
+
+.pricing-section ul li {
+  padding: 0.5vh 0 0.5vh 0;
+}
+
+.pricing-section ul li:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2vh 0 2vh 0;
+}
+
+/* Pricing section above */
 
 @media (max-width: 550px) {
   body {
     text-align: center;
   }
+
 
   header {
     flex-direction: column;
