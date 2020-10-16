@@ -251,6 +251,8 @@ input[type="email"] {
 
 }
 
+
+
 @media (min-width: 900px) {
   .pricing-section {
     flex-direction: row;
@@ -265,6 +267,11 @@ input[type="email"] {
   footer {
     width: 900px;
     margin: 0px auto;
+  }
+  
+  .features-section {
+    margin: 0px auto;
+    width: 950px;
   }
 }
 
