@@ -21,6 +21,7 @@ a {
 .iframe-container {
   display: flex;
   justify-content: center;
+  margin: 10px 0;
 }
 
 img { /* 100% Width and height to have image equal to size of container div */
@@ -101,7 +102,7 @@ input[type="submit"] {
 
 input[type="email"] {
   width: 50vw;
-  height: 3vh;
+  height: 35px;
   padding: 3px;
 }
 
@@ -197,6 +198,10 @@ input[type="email"] {
     width: 100vw;
     border: 0px;
   }
+
+  .pricing-section {
+    height: 1000px;
+  }
 }
 
 @media (min-width: 551px) {
@@ -218,12 +223,12 @@ input[type="email"] {
     padding-left: 5px;
   }
 
-  .content-wrapper {
-    top: 100px;
-  }
-
   footer {
     justify-content: space-around;
+  }
+
+  .content-wrapper {
+    top: 100px;
   }
 
   .features-section img {
@@ -231,6 +236,11 @@ input[type="email"] {
     width: 70px;
     margin: 0 5vw;
   }
+
+  .pricing-section {
+    height: 1000px;
+  }
+
   table {
     text-align: center;
   }
