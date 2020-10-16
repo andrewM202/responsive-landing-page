@@ -18,6 +18,16 @@ a {
   color: black;
 }
 
+.iframe-container {
+  display: flex;
+  justify-content: center;
+}
+
+img { /* 100% Width and height to have image equal to size of container div */
+  width: 100%;
+  height: 100%;
+}
+
 .content-wrapper { /* Made so content is not overlapepd by fixed header */
   position: relative;
   top: 15vh;
@@ -37,12 +47,13 @@ header {
 }
 
 header ul li {
-  padding: 0.2vh;;
+  padding: 0.2vh;
 }
 
-.logo {
+header .logo {
   display: inline-block;
-  width: 60vw;
+  width: 300px;
+  height: 40px;
   background-color: #;
 }
 
@@ -69,6 +80,10 @@ footer table tr:first-child {
 /* Footer above */
 
 /* Form below */
+
+.form {
+  text-align: center;
+}
 
 form {
   padding: 10px;
@@ -98,11 +113,6 @@ input[type="email"] {
 
 /* Form above */
 
-img {
-  width: 100%;
-  height: 100%;
-}
-
 /* Features section below */
 
 .features-section p {
@@ -128,7 +138,7 @@ img {
 }
 
 .pricing-section > div {
-  width: 60vw;
+  width: 300px;
   height: 300px;
   margin: 0.5vh 0 0.5vh 0;
   border: 1px solid black;
@@ -155,6 +165,10 @@ img {
   background-color: #ddd;
 }
 
+.pricing-section ul {
+  text-align: center;
+}
+
 .pricing-section ul li {
   padding: 0.5vh 0 0.5vh 0;
 }
@@ -172,11 +186,9 @@ img {
     text-align: center;
   }
 
-
   header {
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     font-size: 1.2rem;
   }
 
@@ -184,7 +196,37 @@ img {
     width: 0;
   }
 
+  iframe {
+    width: 100vw;
+    border: 0px;
+  }
+}
 
+@media (min-width: 551px) {
+  header {
+    justify-content: space-around;
+    height: 10vh;
+  }
+
+  header nav ul  {
+    display: flex;
+    padding: 15px;
+  }
+
+  header nav ul li {
+    padding-left: 5px;
+  }
+
+  footer {
+    justify-content: space-around;
+  }
+
+  .features-section img {
+    display: inline-block;
+    width: 8vw;
+    margin: 0 5vw;
+    float: left;
+  }
 }
 
 
