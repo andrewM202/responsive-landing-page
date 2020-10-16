@@ -43,6 +43,7 @@ header {
   width: 100vw;
   padding: 2vh;
   opacity: 100%;
+  font-size: 1.1rem;
   z-index: 1;
 }
 
@@ -67,10 +68,6 @@ footer {
   height: 10vh;
   width: 100vw;
   background-color: #ddd;
-}
-
-footer table {
-
 }
 
 footer table tr:first-child {
@@ -204,8 +201,12 @@ input[type="email"] {
 
 @media (min-width: 551px) {
   header {
-    height: 150px;
+    height: 100px;
     justify-content: space-around;
+  }
+
+  header nav {
+    height: 50%;
   }
 
   header nav ul  {
@@ -215,6 +216,10 @@ input[type="email"] {
 
   header nav ul li {
     padding-left: 5px;
+  }
+
+  .content-wrapper {
+    top: 100px;
   }
 
   footer {
