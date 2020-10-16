@@ -245,6 +245,10 @@ input[type="email"] {
     text-align: center;
   }
 
+  iframe {
+    width: 600px;
+  }
+
 }
 
 @media (min-width: 900px) {
